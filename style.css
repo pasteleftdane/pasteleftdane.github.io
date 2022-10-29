@@ -449,6 +449,18 @@ img {
   bottom: 0;
 }
 
+#preloader {
+  background: #8DCFBE url(https://static1.squarespace.com/static/5f641f58c0c0c9743de8d1ff/t/635cdabde6708456f8834b39/1667029697069/preloading.gif) no-repeat center center;
+  background-size: 25%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000000;
+  transition: 1s;
+}
+
 @media screen and (max-width: 720px) {
   body {
     width: 100%;
@@ -600,4 +612,8 @@ img {
   .mobile-only {
     display: initial;
   }
+
+  #preloader {
+    background-size: 100%;
+  }  
 }

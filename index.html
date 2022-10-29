@@ -19,6 +19,9 @@
 </head>
 
 <body>
+  <div id="preloader">
+  </div>
+
   <header>
     <div id="magi-logo">
       <img
@@ -1134,6 +1137,14 @@
       overlay.classList.remove('active')
       body.classList.remove('active')
     }
+  </script>
+
+  <script>
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load", function() {
+      loader.style.display = "none";
+    })
+
   </script>
 </body>
 
