@@ -45,6 +45,86 @@ a {
   transition: 0.2s ease-in;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3vh 5vw;
+  color: #fff;
+}
+
+header #magi-logo img {
+  width: 100px;
+}
+
+header #social-media-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+
+header #social-media-icons img {
+  width: 20px;
+}
+
+#headline {
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4vh 5vw;
+}
+
+#headline div {
+  width: 100%;
+}
+
+#headline h1 {
+  margin: 0 0 5vh 0;
+}
+
+#headline #stream-button {
+  padding: 1em 2.2em;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1vh 0;
+  max-width: 20em;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+#headline #stream-button img {
+  max-width: 25px;
+}
+
+footer {
+  text-align: center;
+  color: #fff;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer div {
+  padding: 2vh 8vw;
+}
+
+footer img {
+  width: 150px;
+}
+
+.mobile-only {
+  display: none;
+}
+
 .header-nav-wrapper {
   display: none;
 }
@@ -68,7 +148,7 @@ a {
   border-radius: 50px 0 0 50px;
   padding: 1vh 1em;
   color: #fff;
-  font-size: 1.5vw;
+  /* font-size: 1.5vw; */
   font-weight: normal;
 }
 
@@ -81,7 +161,7 @@ a {
   background-color: #F69B86;
   color: #ffffff;
   border-radius: 0 50px 50px 0;
-  font-size: 1.5vw;
+  /* font-size: 1.5vw; */
   font-weight: bold;
 }
 
@@ -104,7 +184,7 @@ a {
   cursor: pointer;
   transition: 0.2s;
   min-width: 0;
-  font-size: 1.5vw;
+  /* font-size: 1.5vw; */
 }
 
 .button-active {
@@ -378,6 +458,26 @@ img {
     justify-content: initial;
   }
 
+  header {
+    position: fixed;
+    padding: 10px 15px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(155, 205, 191, 0.5);
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+  }
+  
+  header #magi-logo img {
+    width: 50px;
+  }
+
+  #headline {
+    flex-direction: column;
+    text-align: center;
+  }
+  
   .card {
     margin-top: 1em;
   }
@@ -493,7 +593,11 @@ img {
     padding: 5px 0 0 0;
   }
 
-  #block-yui_3_17_2_1_1666601021754_90492 {
+  #vectary {
     display: none;
+  }
+
+  .mobile-only {
+    display: initial;
   }
 }
