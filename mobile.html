@@ -5,11 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MAGI EXPO 2022</title>
   <!-- Google Font -->
-  <script type="text/javascript">
-    if (screen.width <= 1024) {
-      document.location = "https://www.google.com/"
-    }
-  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -73,10 +68,9 @@
           AR!</a>
       </span>
     </div>
-
-    <div><iframe src="https://app.vectary.com/p/1PBHY1awOK2ywsO1yQxTCo" frameborder="0" width="100%" height="400"
+    <!-- <div><iframe src="https://app.vectary.com/p/1PBHY1awOK2ywsO1yQxTCo" frameborder="0" width="100%" height="400"
         id="vectary"></iframe></div>
-
+ -->
   </div>
 
   <div id="overlay">
@@ -134,7 +128,7 @@
   <script>
     let works = {
       data: [
-        {
+      {
           studNo: "s3904578",
           author: "2D Animation Club",
           emailAddress: "s3904578@student.rmit.edu.au",
@@ -1761,47 +1755,7 @@
       brief.setAttribute("id", "brief");
       // match brief
       brief.innerText = i.brief;
-      // create relevant image 1
-      const relevantImageOne = document.createElement("img");
-      relevantImageOne.setAttribute("src", i.relevantImageOne);
-      // create relevant image 2
-      const relevantImageTwo = document.createElement("img");
-      relevantImageTwo.setAttribute("src", i.relevantImageTwo);
-      // create relevant image 3
-      const relevantImageThree = document.createElement("img");
-      relevantImageThree.setAttribute("src", i.relevantImageThree);
-      // create relevant image 4
-      const relevantImageFour = document.createElement("img");
-      relevantImageFour.setAttribute("src", i.relevantImageFour);
-      // create relevant image 5
-      const relevantImageFive = document.createElement("img");
-      relevantImageFive.setAttribute("src", i.relevantImageFive);
 
-      // check if relevant image exists
-      var relevantImageOneCheck = i.hasOwnProperty('relevantImageOne');
-      if (relevantImageOneCheck) { } else {
-        relevantImageOne.setAttribute("class", "hidden");
-      }
-
-      var relevantImageTwoCheck = i.hasOwnProperty('relevantImageTwo');
-      if (relevantImageTwoCheck) { } else {
-        relevantImageTwo.setAttribute("class", "hidden");
-      }
-
-      var relevantImageThreeCheck = i.hasOwnProperty('relevantImageThree');
-      if (relevantImageThreeCheck) { } else {
-        relevantImageThree.setAttribute("class", "hidden");
-      }
-
-      var relevantImageFourCheck = i.hasOwnProperty('relevantImageFour');
-      if (relevantImageFourCheck) { } else {
-        relevantImageFour.setAttribute("class", "hidden");
-      }
-
-      var relevantImageFiveCheck = i.hasOwnProperty('relevantImageFive');
-      if (relevantImageFiveCheck) { } else {
-        relevantImageFive.setAttribute("class", "hidden");
-      }
 
       // check if embed video link exists
       var youtubeCheck = i.hasOwnProperty('youtube');
@@ -1814,7 +1768,6 @@
       workDetailHolder.appendChild(workTitle);
       workDetailHolder.appendChild(youtube);
       workDetailHolder.appendChild(brief);
-      workDetailHolder.appendChild(relevantImageOne);
       // include two holders to section
       modalSection.appendChild(authorDetailHolder);
       modalSection.appendChild(workDetailHolder);
