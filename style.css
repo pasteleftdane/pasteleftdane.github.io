@@ -597,6 +597,7 @@ img {
 
   #work-detail h1 {
     font-size: 10vw;
+    margin-bottom: 5vh;
   }
 
   #work-detail h4 {
@@ -604,6 +605,7 @@ img {
   }
 
   #work-detail p {
+    margin-top: 5vh;
     padding: 0 2vw;
     font-size: 5vw;
     text-align: left;
@@ -640,5 +642,14 @@ img {
 
   #preloader {
     background-size: 100%;
-  }  
+  }
+
+  #youtube-button {
+    padding: 1em 2.2em;
+    color: #fff;
+    align-items: center;
+    margin: 10vh 0;
+    width: 100%;
+    background-color: #F7665A;
+  }
 }
