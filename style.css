@@ -129,6 +129,10 @@ footer img {
   display: none;
 }
 
+.desktop-only {
+  display: initial;
+}
+
 .header-nav-wrapper {
   display: none;
 }
@@ -629,6 +633,10 @@ img {
   .mobile-only {
     display: initial;
   }
+
+  .desktop-only {
+    display: none;
+  }  
 
   #preloader {
     background-size: 100%;
