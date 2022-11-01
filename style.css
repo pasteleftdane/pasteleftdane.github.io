@@ -510,6 +510,10 @@ img {
     flex-direction: column;
     text-align: center;
   }
+
+  #headline #stream-button {
+    max-width: 100%;
+  }  
   
   .card {
     margin-top: 1em;
@@ -652,4 +656,5 @@ img {
     width: 100%;
     background-color: #F7665A;
   }
+
 }
