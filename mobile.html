@@ -317,7 +317,7 @@
       bilibili.appendChild(bilibiliIcon);
       tiktok.appendChild(tiktokIcon);
 
-      
+
       // check if preferred name has values
       var preferredNameCheck = i.hasOwnProperty('preferredName');
       if (preferredNameCheck) { } else {
@@ -420,7 +420,47 @@
       brief.setAttribute("id", "brief");
       // match brief
       brief.innerText = i.brief;
+      // create relevant image 1
+      const relevantImageOne = document.createElement("img");
+      relevantImageOne.setAttribute("src", i.relevantImageOne);
+      // create relevant image 2
+      const relevantImageTwo = document.createElement("img");
+      relevantImageTwo.setAttribute("src", i.relevantImageTwo);
+      // create relevant image 3
+      const relevantImageThree = document.createElement("img");
+      relevantImageThree.setAttribute("src", i.relevantImageThree);
+      // create relevant image 4
+      const relevantImageFour = document.createElement("img");
+      relevantImageFour.setAttribute("src", i.relevantImageFour);
+      // create relevant image 5
+      const relevantImageFive = document.createElement("img");
+      relevantImageFive.setAttribute("src", i.relevantImageFive);
 
+      // check if relevant image exists
+      var relevantImageOneCheck = i.hasOwnProperty('relevantImageOne');
+      if (relevantImageOneCheck) { } else {
+        relevantImageOne.setAttribute("class", "hidden");
+      }
+
+      var relevantImageTwoCheck = i.hasOwnProperty('relevantImageTwo');
+      if (relevantImageTwoCheck) { } else {
+        relevantImageTwo.setAttribute("class", "hidden");
+      }
+
+      var relevantImageThreeCheck = i.hasOwnProperty('relevantImageThree');
+      if (relevantImageThreeCheck) { } else {
+        relevantImageThree.setAttribute("class", "hidden");
+      }
+
+      var relevantImageFourCheck = i.hasOwnProperty('relevantImageFour');
+      if (relevantImageFourCheck) { } else {
+        relevantImageFour.setAttribute("class", "hidden");
+      }
+
+      var relevantImageFiveCheck = i.hasOwnProperty('relevantImageFive');
+      if (relevantImageFiveCheck) { } else {
+        relevantImageFive.setAttribute("class", "hidden");
+      }
 
       // check if embed video link exists
       var youtubeCheck = i.hasOwnProperty('youtube');
@@ -433,6 +473,12 @@
       workDetailHolder.appendChild(workTitle);
       workDetailHolder.appendChild(youtube);
       workDetailHolder.appendChild(brief);
+      workDetailHolder.appendChild(relevantImageOne);
+      workDetailHolder.appendChild(relevantImageTwo);
+      workDetailHolder.appendChild(relevantImageThree);
+      workDetailHolder.appendChild(relevantImageFour);
+      workDetailHolder.appendChild(relevantImageFive);
+
       // include two holders to section
       modalSection.appendChild(authorDetailHolder);
       modalSection.appendChild(workDetailHolder);
