@@ -60,27 +60,12 @@ let works = {
         workTitle: "Disconnecting",
         brief: "We often see bright and hopeful animations about anxiety. But what if currently you can’t see hope? What if you are struggling and need someone to understand that feeling without having to explain it to them? I want to describe and share the experience of having anxiety and panics. I want to show that it is okay, it is a common experience and that the viewer who relates is not alone in their struggle. It is about representing anxiety for what it is and not minimising the distress. I believe it is important to acknowledge the overwhelming thoughts and struggle and not hide it. Let people talk about the significance of their distress. And if they can’t talk, if they can’t express it in anyway then maybe this animation might help them get a little bit of comfort.",
         youtube: "https://www.youtube.com/embed/kh-b3N1t55M",
-        modalName: "disconnecting"
-      },
-      {
-        studNo: "s3940165",
-        author: "Cécile Robert",
-        emailAddress: "s3940165@student.rmit.edu.au",
-        category: "Animation",
-        instagram: "https://www.instagram.com/cecilerobert78",
-        personalSite: "https://cecile-robert.com",
-        headImage: "https://drive.google.com/uc?id=1BlL9agmNWRXFvAspf1IFnBHGJTBfMtvY",
-        bio: "Cécile is a Melbourne-based 2d animator. She is currently undertaking her Master of Animation, Games and Interactivity at RMIT University.",
-        heroImage: "https://drive.google.com/uc?id=1fxi4Ekb9h3CitvN4bfIiRsqBAsHw42VJ",
-        graduate: "No",
-        workTitle: "The Art of Disconnecting",
-        brief: "Here are pages from the preproduction book, 'The Art of Disconnecting'",
         relevantImageOne: "https://drive.google.com/uc?id=1fxi4Ekb9h3CitvN4bfIiRsqBAsHw42VJ",
         relevantImageTwo: "https://drive.google.com/uc?id=1k4EGbkPZaLysm49llq2oVJccCc1zVfN1",
         relevantImageThree: "https://drive.google.com/uc?id=1oh67NStPpO6vwKXVBpxnD0xCKjb8dEWy",
         relevantImageFour: "https://drive.google.com/uc?id=1m0krpg4rhkzbdNsdwcnlTUB84FZgWeyV",
         relevantImageFive: "https://drive.google.com/uc?id=118VI5Qe8S_HcMQ-72YjKVj11VBuHL3ki",
-        modalName: "the_art_of_disconnecting"
+        modalName: "disconnecting"
       },
       {
         studNo: "s3940165",
@@ -503,6 +488,7 @@ let works = {
         category: "Interactivity",
         headImage: "https://drive.google.com/uc?id=1DmpywPlNFJjAQ8JXK6cKVS541KpmG9hT",
         workTitle: "Juice Box Trash",
+        bio: "Hazel is a Melbourne-based 2D animator, illustrator and film photographer. Working primarily in 2D animation and augmented reality, her various works’ core focus is exploring the effectiveness of environmental storytelling elements and perspective to communicate a mood or emotion. Hazel is currently undertaking a Master of Animation, Games and Interactivity at RMIT University.",
         brief: "Juice Box Trash is one part of Nox Abode, a 2D-animated hidden world augmented reality experience that explores the idea of repurposing trash into new homes by magical creatures called ‘nox’ in a hidden world only revealed through augmented reality (AR). The project stemmed from an interest in hidden worlds found in common objects or places where we wouldn’t think to look twice. The subject matter of trash aims to ask viewers how waste can be seen differently by others. It also aims to let viewers ask themselves how this acceptance and integration into other environments say about trash or waste itself.",
         youtube: "https://www.youtube.com/embed/j_3exfEHe3o?start=21",
         relevantImageOne: "https://drive.google.com/uc?id=1vvsEp1kxnK5QIA77-efBJmdUvtcc4WJ2",
@@ -518,6 +504,7 @@ let works = {
         workTitle: "Fizzy Soda Bottle Trash",
         brief: "Fizzy Soda Bottle Trash forms the second part of Nox Abode, a 2D-animated hidden world augmented reality experience that explores the idea of repurposing trash into new homes by magical creatures called ‘nox’ in a hidden world only revealed through augmented reality (AR). The project stemmed from an interest in hidden worlds found in common objects or places where we wouldn’t think to look twice. The subject matter of trash aims to ask viewers how waste can be seen differently by others. It also aims to let viewers ask themselves how this acceptance and integration into other environments say about trash or waste itself.",
         youtube: "https://www.youtube.com/embed/Cv-9ABj-Ug8?start=11",
+        bio: "Hazel is a Melbourne-based 2D animator, illustrator and film photographer. Working primarily in 2D animation and augmented reality, her various works’ core focus is exploring the effectiveness of environmental storytelling elements and perspective to communicate a mood or emotion. Hazel is currently undertaking a Master of Animation, Games and Interactivity at RMIT University.",
         relevantImageOne: "https://drive.google.com/uc?id=1J1QS1G9yonA4fm1-8RypOUnQFb48QFZc",
         relevantImageTwo: "https://drive.google.com/uc?id=1XACU-E7eP4ovdHqCVLeaXe4PTX9wjbJu",
         modalName: "fizzy_soda_bottle_trash"
@@ -609,7 +596,7 @@ let works = {
         category: "Animation",
         workTitle: "WTR",
         brief: "When it all become too overwhelming, a young girl must tackle her inner turmoil head on. An exploration in mindfulness, WTR aims to remind us that its okay to not be okay, to take our time and that things will be alright in the end.",
-        youtube: "https://drive.google.com/uc?id=1xZw8S7Ve3Je2St7OkAfrfKF6USLr_prZ/preview",
+        youtube: "https://drive.google.com/file/d/1xZw8S7Ve3Je2St7OkAfrfKF6USLr_prZ/preview",
         relevantImageOne: "https://drive.google.com/uc?id=1RxwNz6fItNkSWhQls1twcavEJot6auNX",
         relevantImageTwo: "https://drive.google.com/uc?id=1kRV_wf5K2VvhHaBqmFN4h14AIDN1WVLM",
         relevantImageThree: "https://drive.google.com/uc?id=1aR4j-YjhwIEqweRcXaeBPuR5lCFi3pLx",
@@ -698,7 +685,7 @@ let works = {
         workTitle: "MAGI 3D Club Monster on the Run",
         brief: "This year’s 3D club project took inspiration from CG Challenge hosted by Pwnisher. Other than that, we also tinker with AI generation technology. We AI generated a series of character concept arts and picked one to create a character from. Then, we UV unwrapped and rigged the modelling before sending it to 3D clubbers interested in creating animation or the environment. In the end, we compiled an animation clip with those animation footages. It was a fun and playful experiment for us.",
         youtube: "https://www.youtube.com/embed/_HoTcXTkU0o",
-        relevantImageOne: "https://drive.google.com/uc?id=16ZjQhJw7KK_oW4A1e1TVJL-morZyMkc3",
+        relevantImageOne: "https://drive.google.com/uc?id=1mRxquCWnvZj3edmMxFqMfdp4A9DL8EzI",
         modalName: "m_a_g_i_3_d_club_monster_on_the_run"
       },
       {
@@ -933,7 +920,7 @@ let works = {
         brief: "What is that is a 2D experimental animation based on the recording dialogues from black-box challenge.",
         youtube: "https://www.youtube.com/embed/6tNuB3XLHro",
         relevantImageTwo: "https://drive.google.com/uc?id=1b13GJuFu309wL5diTr15aiGTxWfdaeIY/view?usp=share_link",
-        modalName: "agi studio2_Siting Gong_S3875325"
+        modalName: "agi_studio2__siting_gong__s3875325"
       },
       {
         studNo: "s3875325",
@@ -949,7 +936,7 @@ let works = {
         workTitle: "Oh My God",
         brief: "It is a story that the god is getting tired to save stupid human-being. The story starts with a chat between two gods, a positive guy and a negative guy. The positive one is attracted to humans, and he/she believes human is the perfect creature in the world, while his co-worker has another opinion.",
         youtube: "https://www.youtube.com/embed/HDaXisbeR-8",
-        modalName: "OH MY GOD Studio 3 animation"
+        modalName: "o_h_m_y_g_o_d_studio_3_animation"
       },
       {
         studNo: "s3721498",
@@ -1017,7 +1004,7 @@ let works = {
         graduate: "No",
         workTitle: "Memories",
         brief: "Souvenirs and memorabilia can evoke memories and hold sentimental value. The attachment and sentimental value that an item can have for one person, can't be seen by another. Only through words and photos can they conveyed to another. \"Memories\" explores the idea of how these objects can contain these memories, and literally revealing the memories inside.",
-        youtube: "https://youtube.com/shorts/l7LIPHNkN-M and https://youtube.com/shorts/36XFJJsNcoA",
+        youtube: "https://www.youtube.com/embed/l7LIPHNkN-M",
         modalName: "memories"
       },
       {
@@ -1176,7 +1163,7 @@ let works = {
         relevantImageOne: "https://drive.google.com/uc?id=1Z9cmo3zj6iR6cScZPiPBh3HIB8zdhAC6",
         relevantImageTwo: "https://drive.google.com/uc?id=1cYZp6hVZ3ekhfSut1vDb7hIm3DwHK6Qe",
         relevantImageThree: "https://drive.google.com/uc?id=17etintDqjdOE5G_1qD3vsmCQvVOAds5L",
-        modalName: "sharkbird &_parklet_critters"
+        modalName: "sharkbird_parklet_critters"
       },
       {
         studNo: "s3939767",
@@ -1346,12 +1333,12 @@ let works = {
         studNo: "s3759832",
         author: "Yuxin Liu",
         emailAddress: "s3759832@student.rmit.edu.au",
-        category: "Animation",
+        category: "Games",
         headImage: "https://drive.google.com/uc?id=1AvSLmYIA23xWnqIp70T4ci45HmXVnGJJ",
         bio: "yuxin is a novice animator. She specializes in background creation and color matching. yuxin is currently studying for a Master's degree in Animation, Games and Interactivity at RMIT University. She is working on the short animation \"date\" with her partner.",
         heroImage: "https://drive.google.com/uc?id=1F6cJZxp1DlmFmG6aJM1zYL4SiQp77q_d",
         graduate: "No",
-        workTitle: "The date",
+        workTitle: "The Silence of Tower",
         brief: "\"I have forgotten many things, but I have never forgotten to love you.\"",
         youtube: "https://www.youtube.com/embed/PqCLuDWAhKY",
         modalName: "the_date"
