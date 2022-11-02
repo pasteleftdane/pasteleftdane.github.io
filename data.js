@@ -1049,7 +1049,7 @@ let works = {
         graduate: "No",
         workTitle: "Day 1",
         brief: "In recent years, the issue of social credit has received increasing attention. People find they are under surveillance and control. The aim of this research is to explore how metaphors are used to reflect social events and government surveillance. The project aims to convey the relationship between the government and citizens through objects such as screens, buttons, etc.",
-        youtube: "https://www.youtube.com/embed/WVBtMR0IuZI",
+        youtube: "https://www.youtube.com/embed/t0EB_sPVbxE",
         relevantImageOne: "https://drive.google.com/uc?id=19Trg6dKS3vsFzCJup9yAVZrwsiYHRE5H",
         relevantImageTwo: "https://drive.google.com/uc?id=19i3S7bJMpm3daJ4pAWEp58uqNM0QBu4S",
         relevantImageThree: "https://drive.google.com/uc?id=17UUCmUO5T8zb29v1uvTT2PCaVs_6gF62",
