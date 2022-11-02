@@ -164,7 +164,23 @@
           return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
         }
       );
+      let authorPreferredName = document.createElement("span");
+      authorPreferredName.innerText = " (" + i.preferredName + ")".replace(
+        /\w\S*/g,
+        function (txt) {
+          return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+        }
+      );
+
+      author.appendChild(authorPreferredName);
       container.appendChild(author);
+
+      // check if preferred name exists
+      var authorPreferredNameCheck = i.hasOwnProperty('preferredName');
+      if (authorPreferredNameCheck) { } else {
+        authorPreferredName.setAttribute("class", "hidden");
+      }
+
 
       card.appendChild(container);
       document.getElementById("works").appendChild(card);
@@ -323,7 +339,7 @@
       bilibili.appendChild(bilibiliIcon);
       tiktok.appendChild(tiktokIcon);
 
-      
+
       // check if preferred name has values
       var preferredNameCheck = i.hasOwnProperty('preferredName');
       if (preferredNameCheck) { } else {
