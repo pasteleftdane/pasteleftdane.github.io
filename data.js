@@ -165,6 +165,7 @@ let works = {
         category: "Animation",
         linkedin: "https://www.linkedin.com/in/stan-zhang-49864b240",
         personalSite: "https://www.artstation.com/deathwing50",
+        youtube: "https://www.youtube.com/embed/hqKxX-h7MFo",
         headImage: "https://drive.google.com/uc?id=1ZEoKHcGzVtL1eiLHs2xeyyiPRfW71SDh",
         bio: "Stan is an art producer and concept artist from mainland China. Working with a combination of concept art and project management, his core focus is on the production of digital assets for games and the management of entertainment industry processes.Stan is currently studying for a Masters in Animation, Games and Interactivity at RMIT University and has extensive experience working in the entertainment industry and efficient production capabilities.",
         heroImage: "https://drive.google.com/uc?id=1Cf_JQbMidoN7-soxRmgYpRqeCjsTpBf2",
