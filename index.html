@@ -28,8 +28,8 @@
 </head>
 
 <body>
-  <div id="preloader">
-  </div>
+  <!-- <div id="preloader">
+  </div> -->
 
   <header>
     <div id="magi-logo">
@@ -91,7 +91,7 @@
     </div>
 
     <section id="buttons">
-      <button class="button-value button-all" onclick="filterCategory('all')">All</button>
+      <button class="button-value button-all button-active" onclick="filterCategory('all')">All</button>
       <button class="button-value button-ani" onclick="filterCategory('Animation')">
         Animation
       </button>
@@ -106,7 +106,7 @@
       </button> -->
     </section>
 
-    <section class="work-container">
+    <section class="work-container" onload="myfunction()">
       <div id="works"></div>
     </section>
   </div>
@@ -139,13 +139,14 @@
       card.setAttribute("data-modal-target", "#" + i.modalName);
       card.setAttribute("class", "open-modal");
       //Card should have category and should stay hidden initially
-      card.classList.add("card", i.category, "hide");
+      card.classList.add("card", i.category);
       //heroImage div
       let imgContainer = document.createElement("div");
       imgContainer.classList.add("heroImage-container");
       //img tag
       let heroImage = document.createElement("img");
       heroImage.setAttribute("src", i.heroImage);
+      heroImage.setAttribute("id", "hero-image")
       imgContainer.appendChild(heroImage);
       card.appendChild(imgContainer);
       //container
@@ -205,7 +206,8 @@
       closeButton.appendChild(crossSign);
       // create the head shot img
       const headImage = document.createElement("img");
-      headImage.setAttribute("id", "head-shot")
+      headImage.setAttribute("loading", "lazy");
+      headImage.setAttribute("id", "head-shot");
       headImage.setAttribute("src", i.headImage);
       headImage.setAttribute("alt", i.preferredName);
       // include the x and head shot img to author detail div
@@ -433,6 +435,7 @@
       const youtube = document.createElement("iframe");
       youtube.setAttribute("frameborder", "0");
       youtube.setAttribute("class", "desktop-only");
+      youtube.setAttribute("loading", "lazy");
       youtube.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen");
       // match video iframe
       youtube.setAttribute("src", i.youtube);
@@ -444,18 +447,23 @@
       // create relevant image 1
       const relevantImageOne = document.createElement("img");
       relevantImageOne.setAttribute("src", i.relevantImageOne);
+      relevantImageOne.setAttribute("loading", "lazy");
       // create relevant image 2
       const relevantImageTwo = document.createElement("img");
       relevantImageTwo.setAttribute("src", i.relevantImageTwo);
+      relevantImageTwo.setAttribute("loading", "lazy");
       // create relevant image 3
       const relevantImageThree = document.createElement("img");
       relevantImageThree.setAttribute("src", i.relevantImageThree);
+      relevantImageThree.setAttribute("loading", "lazy");
       // create relevant image 4
       const relevantImageFour = document.createElement("img");
       relevantImageFour.setAttribute("src", i.relevantImageFour);
+      relevantImageFour.setAttribute("loading", "lazy");
       // create relevant image 5
       const relevantImageFive = document.createElement("img");
       relevantImageFive.setAttribute("src", i.relevantImageFive);
+      relevantImageFive.setAttribute("loading", "lazy");
 
       // check if relevant image exists
       var relevantImageOneCheck = i.hasOwnProperty('relevantImageOne');
@@ -616,14 +624,6 @@
       overlay.classList.remove('active')
       body.classList.remove('active')
     }
-  </script>
-
-  <script>
-    var loader = document.getElementById("preloader");
-    window.addEventListener("load", function () {
-      loader.style.display = "none";
-    })
-
   </script>
 </body>
 

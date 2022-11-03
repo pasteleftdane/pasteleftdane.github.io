@@ -23,8 +23,8 @@
 </head>
 
 <body>
-  <div id="preloader">
-  </div>
+  <!-- <div id="preloader">
+  </div> -->
 
   <header>
     <div id="magi-logo">
@@ -199,8 +199,9 @@
       closeButton.appendChild(crossSign);
       // create the head shot img
       const headImage = document.createElement("img");
-      headImage.setAttribute("id", "head-shot")
+      headImage.setAttribute("id", "head-shot");
       headImage.setAttribute("src", i.headImage);
+      headImage.setAttribute("loading", "lazy");
       headImage.setAttribute("alt", i.preferredName);
       // include the x and head shot img to author detail div
       headShotHolder.appendChild(closeButton);
@@ -439,18 +440,23 @@
       // create relevant image 1
       const relevantImageOne = document.createElement("img");
       relevantImageOne.setAttribute("src", i.relevantImageOne);
+      relevantImageOne.setAttribute("loading", "lazy");
       // create relevant image 2
       const relevantImageTwo = document.createElement("img");
       relevantImageTwo.setAttribute("src", i.relevantImageTwo);
+      relevantImageTwo.setAttribute("loading", "lazy");
       // create relevant image 3
       const relevantImageThree = document.createElement("img");
       relevantImageThree.setAttribute("src", i.relevantImageThree);
+      relevantImageThree.setAttribute("loading", "lazy");
       // create relevant image 4
       const relevantImageFour = document.createElement("img");
       relevantImageFour.setAttribute("src", i.relevantImageFour);
+      relevantImageFour.setAttribute("loading", "lazy");
       // create relevant image 5
       const relevantImageFive = document.createElement("img");
       relevantImageFive.setAttribute("src", i.relevantImageFive);
+      relevantImageFive.setAttribute("loading", "lazy");
 
       // check if relevant image exists
       var relevantImageOneCheck = i.hasOwnProperty('relevantImageOne');
@@ -611,14 +617,6 @@
       overlay.classList.remove('active')
       body.classList.remove('active')
     }
-  </script>
-
-  <script>
-    var loader = document.getElementById("preloader");
-    window.addEventListener("load", function () {
-      loader.style.display = "none";
-    })
-
   </script>
 </body>
 
