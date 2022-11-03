@@ -85,7 +85,7 @@
     </div>
 
     <section id="buttons">
-      <button class="button-value button-all" onclick="filterCategory('all')">All</button>
+      <button class="button-value button-all button-active" onclick="filterCategory('all')">All</button>
       <button class="button-value button-ani" onclick="filterCategory('Animation')">
         Animation
       </button>
@@ -133,7 +133,7 @@
       card.setAttribute("data-modal-target", "#" + i.modalName);
       card.setAttribute("class", "open-modal");
       //Card should have category and should stay hidden initially
-      card.classList.add("card", i.category, "hide");
+      card.classList.add("card", i.category);
       //heroImage div
       let imgContainer = document.createElement("div");
       imgContainer.classList.add("heroImage-container");
