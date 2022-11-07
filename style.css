@@ -517,6 +517,7 @@ img {
   
   .card {
     margin-top: 1em;
+    cursor: pointer;
   }
 
   #works {
