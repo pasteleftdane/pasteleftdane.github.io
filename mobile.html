@@ -46,11 +46,6 @@
   </header>
 
   <div id="headline">
-    <div class="mobile-only">
-      <img id="magi-2022-mascot" width="100%"
-        src="https://static1.squarespace.com/static/5f641f58c0c0c9743de8d1ff/t/635cb686bf6485031a1b7332/1667020424422/magi-2022-mascot.png">
-    </div>
-
     <div>
       <h4>Explore the wondrous creations of the students of</h4>
       <h1>Masters of <span style="color:#F6DA72">Animation</span>, <span style="color:#6275B8">Games</span> and <span
@@ -61,16 +56,19 @@
       <a href="" id="stream-button" style="background-color: #5560de;"><span><img
             src="https://static1.squarespace.com/static/5f641f58c0c0c9743de8d1ff/t/635cad4cbc4fe47402c609c8/1667018060895/gather.png"></span>Party
         @ Gather Town</a> -->
-      <span class="mobile-only">
-        <a href="https://app.vectary.com/viewer-ar/v1/?model=2e33b843-41bc-46ce-8e10-91f2ab4b4616&domain=ar&backLink=https://app.vectary.com/p/1PBHY1awOK2ywsO1yQxTCo"
-          id="stream-button" style="background-color: #F69B86;"><span><img
-              src="https://static1.squarespace.com/static/5f641f58c0c0c9743de8d1ff/t/635cb3e56d550e3cad596cf9/1667019749816/ar.png"></span>Engage
-          AR!</a>
-      </span>
+      <a href="https://app.vectary.com/viewer-ar/v1/?model=2e33b843-41bc-46ce-8e10-91f2ab4b4616&domain=ar&backLink=https://app.vectary.com/p/1PBHY1awOK2ywsO1yQxTCo"
+        id="stream-button" style="background-color: #F69B86;"><span><img
+            src="https://static1.squarespace.com/static/5f641f58c0c0c9743de8d1ff/t/635cb3e56d550e3cad596cf9/1667019749816/ar.png"></span>Engage
+        AR!</a>
     </div>
     <!-- <div><iframe src="https://app.vectary.com/p/1PBHY1awOK2ywsO1yQxTCo" frameborder="0" width="100%" height="400"
         id="vectary"></iframe></div>
  -->
+    <div>
+      <img id="magi-2022-mascot" width="100%"
+        src="https://static1.squarespace.com/static/5f641f58c0c0c9743de8d1ff/t/635cb686bf6485031a1b7332/1667020424422/magi-2022-mascot.png">
+    </div>
+
   </div>
 
   <div id="overlay">
@@ -628,7 +626,7 @@
 
     function preloadImage(img) {
       const src = img.getAttribute("data-src");
-      if(!src) {
+      if (!src) {
         return;
       }
 
@@ -641,14 +639,14 @@
     };
 
     const imgObserver = new IntersectionObserver((entries, imgObserver) => {
-        entries.forEach(entry => {
-          if (!entry.isIntersecting) {
-            return;
-          } else {
-            preloadImage(entry.target);
-            imgObserver.unobserve(entry.target);
-          }
-        });
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+          return;
+        } else {
+          preloadImage(entry.target);
+          imgObserver.unobserve(entry.target);
+        }
+      });
     }, imgOptions);
 
     images.forEach(image => {
