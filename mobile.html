@@ -139,7 +139,7 @@
       imgContainer.classList.add("heroImage-container");
       //img tag
       let heroImage = document.createElement("img");
-      heroImage.setAttribute("src", i.heroImage);
+      heroImage.setAttribute("data-src", i.heroImage);
       imgContainer.appendChild(heroImage);
       card.appendChild(imgContainer);
       //container
@@ -200,7 +200,7 @@
       // create the head shot img
       const headImage = document.createElement("img");
       headImage.setAttribute("id", "head-shot");
-      headImage.setAttribute("src", i.headImage);
+      headImage.setAttribute("data-src", i.headImage);
       headImage.setAttribute("alt", i.preferredName);
       // include the x and head shot img to author detail div
       headShotHolder.appendChild(closeButton);
@@ -430,7 +430,7 @@
       youtube.setAttribute("target", "_blank");
       youtube.innerText = "Watch " + i.workTitle;
       // match video iframe
-      youtube.setAttribute("src", i.youtube);
+      youtube.setAttribute("data-src", i.youtube);
       // create brief p
       const brief = document.createElement("p");
       brief.setAttribute("id", "brief");
@@ -438,19 +438,19 @@
       brief.innerText = i.brief;
       // create relevant image 1
       const relevantImageOne = document.createElement("img");
-      relevantImageOne.setAttribute("src", i.relevantImageOne);
+      relevantImageOne.setAttribute("data-src", i.relevantImageOne);
       // create relevant image 2
       const relevantImageTwo = document.createElement("img");
-      relevantImageTwo.setAttribute("src", i.relevantImageTwo);
+      relevantImageTwo.setAttribute("data-src", i.relevantImageTwo);
       // create relevant image 3
       const relevantImageThree = document.createElement("img");
-      relevantImageThree.setAttribute("src", i.relevantImageThree);
+      relevantImageThree.setAttribute("data-src", i.relevantImageThree);
       // create relevant image 4
       const relevantImageFour = document.createElement("img");
-      relevantImageFour.setAttribute("src", i.relevantImageFour);
+      relevantImageFour.setAttribute("data-src", i.relevantImageFour);
       // create relevant image 5
       const relevantImageFive = document.createElement("img");
-      relevantImageFive.setAttribute("src", i.relevantImageFive);
+      relevantImageFive.setAttribute("data-src", i.relevantImageFive);
 
       // check if relevant image exists
       var relevantImageOneCheck = i.hasOwnProperty('relevantImageOne');
@@ -623,6 +623,36 @@
 
   </script>
 
+  <script>
+    const images = document.querySelectorAll("[data-src]");
+
+    function preloadImage(img) {
+      const src = img.getAttribute("data-src");
+      if(!src) {
+        return;
+      }
+
+      img.src = src;
+    }
+
+    const imgOptions = {};
+
+    const imgObserver = new IntersectionObserver((entries, imgObserver) => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) {
+            return;
+          } else {
+            preloadImage(entry.target);
+            imgObserver.unobserve(entry.target);
+          }
+        });
+    }, imgOptions);
+
+    images.forEach(image => {
+      imgObserver.observe(image);
+    })
+
+  </script>
 </body>
 
 </html>
