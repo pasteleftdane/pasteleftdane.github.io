@@ -23,8 +23,8 @@
 </head>
 
 <body>
-  <!-- <div id="preloader">
-  </div> -->
+  <div id="preloader">
+  </div>
 
   <header>
     <div id="magi-logo">
@@ -618,6 +618,14 @@
       body.classList.remove('active')
     }
   </script>
+
+    <script>
+    var loader = document.getElementById("#preloder");
+    window.addEventListener("load", function () {
+      loader.style.display = "none";
+    })
+  </script>
+
 </body>
 
 </html>
